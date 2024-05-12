@@ -1,6 +1,5 @@
 #!groovy
-
-def decidePipeline (map configMap) {
+def decidePipeline (Map configMap) {
     application = configMap.get("application")
     switch(GIT_BRANCH) {
         case 'nodejsVM':
@@ -12,7 +11,7 @@ def decidePipeline (map configMap) {
         case 'nodejsEKS':
             nodejsEKS(config)
         default:
-            error "allication is no recognise"
+            error "application is no recognise"
             break
 
     }
