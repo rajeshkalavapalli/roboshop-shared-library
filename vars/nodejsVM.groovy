@@ -7,7 +7,7 @@ def call(Map configMap) {
         }
         environment { 
             packageVersion = ""
-            nexusUrl = "172.31.39.42:8081"
+            nexusUrl = "172.31.34.109:8081"
         }
 
         options {
