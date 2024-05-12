@@ -1,7 +1,7 @@
 #!groovy
 def decidePipeline (Map configMap) {
     application = configMap.get("application")
-    switch(GIT_BRANCH) {
+    switch(application) {
         case 'nodejsVM':
             nodejsVM(configMap)
             break
